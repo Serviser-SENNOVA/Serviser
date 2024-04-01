@@ -12,6 +12,7 @@ Instala las dependencias de Django y guircorn(servidor).
 pip install django djangorestframework gunicorn
 ```
 
+Facilitar la conexión a backend
 ```bash
 pip install django-cors-headers
 ```

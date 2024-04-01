@@ -18,15 +18,6 @@ SECRET_KEY = 'django-insecure-1a66w$-%z@dcssm%cf%iz3n^qxe#=17b_lq26+)*b+of#w!koa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # TODO: dovenv
 
-ALLOWED_HOSTS = ["*"]  # TODO: dotenv
-
-# Allow all request.
-CORS_ALLOW_ALL_ORIGINS = True  # TODO: dotenv
-# From this domain.
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # TODO: Use dotenv instead localhost.
-]
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -120,3 +111,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Cors
+
+ALLOWED_HOSTS = ["*"]  # TODO: dotenv
+
+# Allow all request.
+CORS_ALLOW_ALL_ORIGINS = True  # TODO: dotenv
+# From this domain.
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # TODO: Use dotenv instead localhost.
+]
